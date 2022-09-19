@@ -1,11 +1,13 @@
 .projects-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
     &__thumbnail {
         background-color: green;
-        width: 30%;
-        height: 30rem;
+        width: 40%;
+        height: 10rem;
+        margin: 0 0 2rem;
 
     }
 }
@@ -14,15 +16,17 @@
 #thumbnail-one {
     background: url(../../assets/thumbnails/dontforgetlanding.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100%;
+    
 }
 
 #thumbnail-two {
     background: url(../../assets/thumbnails/googlehealthlanding.png);
     background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#thumbnail-three {
-    
+    background-size: cover;
+    width: auto;
+    height: 100%;
 }
