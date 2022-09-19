@@ -1,0 +1,28 @@
+.projects-section {
+    display: flex;
+    justify-content: center;
+
+    &__thumbnail {
+        background-color: green;
+        width: 30%;
+        height: 30rem;
+
+    }
+}
+
+
+#thumbnail-one {
+    background: url(../../assets/thumbnails/dontforgetlanding.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#thumbnail-two {
+    background: url(../../assets/thumbnails/googlehealthlanding.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#thumbnail-three {
+    
+}

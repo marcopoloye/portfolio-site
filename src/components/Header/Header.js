@@ -1,7 +1,9 @@
+import './Header.scss';
+
 function Header() {
     return (
         <>
-            <ul>
+            <ul className='header__list'>
                 <li>
                     Projects
                 </li>
