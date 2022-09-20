@@ -1,15 +1,13 @@
 import Header from "./components/Header/Header";
-import ProjectsHeading from "./components/ProjectsHeading/ProjectsHeading";
-import ContactHeading from "./components/ContactHeading/ContactHeading";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
+import ContactsSection from "./components/ContactsSection/ContactsSection";
 
 function App() {
   return (
     <>
       {/* <Header/> */}
-      <ProjectsHeading/>
       <ProjectsSection/>
-      <ContactHeading/>
+      <ContactsSection/>
     </>
   );
 }

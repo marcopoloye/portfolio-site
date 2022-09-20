@@ -3,6 +3,7 @@ import './ProjectsSection.scss'
 function ProjectsSection() {
     return (
         <>
+            <h2 className='projects-section__heading'>Projects</h2>
             <section className="projects-section">
                 <div className='projects-section__thumbnail'>
                     <div id='thumbnail-one'></div>
