@@ -3,7 +3,7 @@ import './ProjectsHeading.scss'
 function ProjectsHeading() {
     return (
         <>
-            <h2 className='projects_heading'>Projects</h2>
+            <h2 className='projects__heading'>Projects</h2>
         </>
     );
 }
