@@ -1,7 +1,9 @@
+import './ContactsSection.scss'
+
 function ContactsSection() {
     return (
         <>
-            <h2>Contact</h2>
+            <h2 className="contacts-section__heading">Contact</h2>
         </>
     );
 }
