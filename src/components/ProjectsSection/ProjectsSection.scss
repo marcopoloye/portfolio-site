@@ -5,39 +5,38 @@
 
     &__thumbnail {
         background-color: green;
-        width: 40%;
+        width: 100%;
         height: 10rem;
-        margin: 0 0 2rem;
+        margin: 0 2rem 3rem;
         border-radius: 2%;
 
     }
 }
 
 
-#thumbnail-one {
-    background: url(../../assets/thumbnails/dontforgetlanding.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+#thumbnail-one, #thumbnail-two, #thumbnail-three, #thumbnail-four {
     width: auto;
     height: 100%;
     border-radius: 2%;
+}
+
+#thumbnail-one {
+    background: url(../../assets/thumbnails/dontforgetlanding.png) no-repeat center;
+    background-size: cover;
 }
 
 #thumbnail-two {
-    background: url(../../assets/thumbnails/googlehealthlanding.png);
-    background-repeat: no-repeat;
+    background: url(../../assets/thumbnails/googlehealthlanding.png) no-repeat;
     background-size: cover;
-    width: auto;
-    height: 100%;
-    border-radius: 2%;
 }
 
 #thumbnail-three {
-    background: url(../../assets/thumbnails/brainflixlanding.png);
-    background-repeat: no-repeat;
+    background: url(../../assets/thumbnails/brainflixlanding.png) no-repeat center;
     background-size: cover;
-    width: auto;
-    height: 100%;
-    border-radius: 2%;
+}
+
+#thumbnail-four {
+    background: url(../../assets/thumbnails/instocklanding.png) no-repeat;
+    background-size: 140%;
 }

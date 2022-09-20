@@ -1,3 +1,5 @@
+import './ProjectsHeading.scss'
+
 function ProjectsHeading() {
     return (
         <>

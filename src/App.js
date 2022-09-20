@@ -6,7 +6,7 @@ import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 function App() {
   return (
     <>
-      <Header/>
+      {/* <Header/> */}
       <ProjectsHeading/>
       <ProjectsSection/>
       <ContactHeading/>
