@@ -18,16 +18,15 @@ function ProjectsSection() {
                     </p>
                     <div className='projects-section__icons'>
                         <img 
-                            id='icon-git' 
-                            src={gitsvg} 
+                            id='icon-git'
+                            src={gitsvg}
                             onClick={()=> window.open('https://github.com/marcopoloye/dont-forget', '_blank')}
                         />
                         <img 
-                            id='icon-link' 
-                            src={linksvg} 
+                            id='icon-link'
+                            src={linksvg}
                             onClick={()=> window.open('https://dont-forget-2022.herokuapp.com/', '_blank')}
                         />
-
                     </div>
                 </div>
 
@@ -40,13 +39,13 @@ function ProjectsSection() {
                     </p>
                     <div className='projects-section__icons'>
                         <img 
-                            id='icon-git' 
-                            src={gitsvg} 
+                            id='icon-git'
+                            src={gitsvg}
                             onClick={()=> window.open('https://github.com/marcopoloye/googleHackathon', '_blank')}
                         />
                         <img 
-                            id='icon-link' 
-                            src={linksvg} 
+                            id='icon-link'
+                            src={linksvg}
                             onClick={()=> window.open('', '_blank')}
                         />
                     </div>
@@ -61,13 +60,13 @@ function ProjectsSection() {
                     </p>
                     <div className='projects-section__icons'>
                         <img 
-                            id='icon-git' 
-                            src={gitsvg} 
+                            id='icon-git'
+                            src={gitsvg}
                             onClick={()=> window.open('https://github.com/freeHashBrown/instock-silentdebuggers', '_blank')}
                         />
                         <img 
-                            id='icon-link' 
-                            src={linksvg} 
+                            id='icon-link'
+                            src={linksvg}
                             onClick={()=> window.open('', '_blank')}
                         />
                     </div>
@@ -76,20 +75,19 @@ function ProjectsSection() {
                 <div className='projects-section__card'>
                     <div className='projects-section__thumbnail'>
                         <div id='thumbnail-four'></div>
-
                     </div>
                     <p className='projects-section__text'>
                         BrainFlix is a mock video streaming platform with video uploading and commenting capabilities.
                     </p>
                     <div className='projects-section__icons bottom'>
                         <img 
-                            id='icon-git' 
-                            src={gitsvg} 
+                            id='icon-git'
+                            src={gitsvg}
                             onClick={() => window.open('https://github.com/marcopoloye/brainflix', '_blank')}
                         />
                         <img 
-                            id='icon-link' 
-                            src={linksvg} 
+                            id='icon-link'
+                            src={linksvg}
                             onClick={()=> window.open('', '_blank')}
                         />
                     </div>
