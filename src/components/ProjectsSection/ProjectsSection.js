@@ -1,7 +1,7 @@
 import './ProjectsSection.scss';
 import gitsvg from '../../assets/icons/gitsvg.svg';
 import linksvg from '../../assets/icons/linksvg.svg';
-
+import { Link } from 'react-router-dom';
 
 function ProjectsSection() {
     return (
@@ -17,12 +17,17 @@ function ProjectsSection() {
                         Don't Forget is a checklist app designed to help forgetful travelers remember what to pack.
                     </p>
                     <div className='projects-section__icons'>
-                        <a href='https://github.com/marcopoloye/dont-forget' target='_blank'>
-                            <img id='icon-git' src={gitsvg}/>
-                        </a>
-                        <a href='https://dont-forget-2022.herokuapp.com/' target='_blank'>
-                            <img id='icon-link' src={linksvg}/>
-                        </a>
+                        <img 
+                            id='icon-git' 
+                            src={gitsvg} 
+                            onClick={()=> window.open('https://github.com/marcopoloye/dont-forget', '_blank')}
+                        />
+                        <img 
+                            id='icon-link' 
+                            src={linksvg} 
+                            onClick={()=> window.open('https://dont-forget-2022.herokuapp.com/', '_blank')}
+                        />
+
                     </div>
                 </div>
 
@@ -34,12 +39,16 @@ function ProjectsSection() {
                         Google Health Connect is an online portal that connects healthcare providers to patients with a focus on accessibility. 
                     </p>
                     <div className='projects-section__icons'>
-                        <a href='https://github.com/marcopoloye/googleHackathon' target='_blank'>
-                            <img id='icon-git' src={gitsvg}/>
-                        </a>
-                        <a href='' target='_blank'>
-                            <img id='icon-link' src={linksvg}/>
-                        </a>
+                        <img 
+                            id='icon-git' 
+                            src={gitsvg} 
+                            onClick={()=> window.open('https://github.com/marcopoloye/googleHackathon', '_blank')}
+                        />
+                        <img 
+                            id='icon-link' 
+                            src={linksvg} 
+                            onClick={()=> window.open('', '_blank')}
+                        />
                     </div>
                 </div>
 
@@ -51,15 +60,18 @@ function ProjectsSection() {
                         InStock is a mock inventory management system with CRUD operations.
                     </p>
                     <div className='projects-section__icons'>
-                        <a href='https://github.com/freeHashBrown/instock-silentdebuggers' target='_blank'>
-                            <img id='icon-git' src={gitsvg}/>
-                        </a>
-                        <a href='' target='_blank'>
-                            <img id='icon-link' src={linksvg}/>
-                        </a>
+                        <img 
+                            id='icon-git' 
+                            src={gitsvg} 
+                            onClick={()=> window.open('https://github.com/freeHashBrown/instock-silentdebuggers', '_blank')}
+                        />
+                        <img 
+                            id='icon-link' 
+                            src={linksvg} 
+                            onClick={()=> window.open('', '_blank')}
+                        />
                     </div>
                 </div>
-
 
                 <div className='projects-section__card'>
                     <div className='projects-section__thumbnail'>
@@ -70,12 +82,16 @@ function ProjectsSection() {
                         BrainFlix is a mock video streaming platform with video uploading and commenting capabilities.
                     </p>
                     <div className='projects-section__icons bottom'>
-                        <a href='https://github.com/marcopoloye/brainflix' target='_blank'>
-                            <img id='icon-git' src={gitsvg}/>
-                        </a>
-                        <a href='' target='_blank'>
-                            <img id='icon-link' src={linksvg}/>
-                        </a>
+                        <img 
+                            id='icon-git' 
+                            src={gitsvg} 
+                            onClick={() => window.open('https://github.com/marcopoloye/brainflix', '_blank')}
+                        />
+                        <img 
+                            id='icon-link' 
+                            src={linksvg} 
+                            onClick={()=> window.open('', '_blank')}
+                        />
                     </div>
                 </div>
 
