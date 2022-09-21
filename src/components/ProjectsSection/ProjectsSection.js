@@ -64,11 +64,11 @@ function ProjectsSection() {
                             src={gitsvg}
                             onClick={()=> window.open('https://github.com/freeHashBrown/instock-silentdebuggers', '_blank')}
                         />
-                        <img 
+                        {/* <img 
                             id='icon-link'
                             src={linksvg}
                             onClick={()=> window.open('', '_blank')}
-                        />
+                        /> */}
                     </div>
                 </div>
 
