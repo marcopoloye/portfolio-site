@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
-import ContactsSection from "./components/ContactsSection/ContactsSection";
+import ContactSection from "./components/ContactSection/ContactSection";
 import IntroSection from "./components/IntroSection/IntroSection";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       {/* <Header/> */}
       <IntroSection/>
       <ProjectsSection/>
-      <ContactsSection/>
+      <ContactSection/>
     </>
   );
 }

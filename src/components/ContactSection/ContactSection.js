@@ -1,12 +1,12 @@
-import './ContactsSection.scss'
+import './ContactSection.scss'
 
-function ContactsSection() {
+function ContactSection() {
     return (
         <>
-            <h2 className='contacts-section__heading'>Contact</h2>
+            <h2 className='contact-section__heading'>Contact</h2>
 
             <div>
-                <form className='contacts-section__form'>
+                <form className='contact-section__form'>
                     <input placeholder='Enter your name' type='text'></input>
                     <input placeholder='Enter your email' type='text'></input>
                     <textarea placeholder='Enter your message'></textarea>
@@ -16,4 +16,4 @@ function ContactsSection() {
     );
 }
 
-export default ContactsSection;
+export default ContactSection;
