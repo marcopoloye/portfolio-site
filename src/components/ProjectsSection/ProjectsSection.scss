@@ -6,16 +6,15 @@
     flex-wrap: wrap;
 
     &__heading {
-        margin: 2rem 2rem 2rem;
+        margin: 5rem 3rem 2rem;
         font-family: 'MadeTommy';
         font-size: 3rem;
         text-transform: uppercase;
     }
     &__thumbnail {
         width: 100%;
-        height: 10rem;
-        margin: 0 2rem 0;
-        border-radius: 0%;
+        height: 8rem;
+        margin: 0 3rem 0;
     }
 }
 
@@ -28,22 +27,22 @@
 }
 
 #thumbnail-one {
-    background: url(../../assets/thumbnails/logo.svg) no-repeat center;
-    background-size: 80%;
-}
-
-#thumbnail-two {
-    background: url(../../assets/thumbnails/hclogo.svg) no-repeat center;
+    background: url(../../assets/thumbnails/dontforget-logo.svg) no-repeat center;
     background-size: 90%;
 }
 
+#thumbnail-two {
+    background: url(../../assets/thumbnails/healthconnect-logo.svg) no-repeat center;
+    background-size: 100%;
+}
+
 #thumbnail-three {
-    background: url(../../assets/thumbnails/BrainFlix-logo.svg) no-repeat center;
-    background-size: 80%;
+    background: url(../../assets/thumbnails/brainflix-logo.svg) no-repeat center;
+    background-size: 90%;
 }
 
 #thumbnail-four {
-    background: url(../../assets/thumbnails/InStock-Logo.svg) no-repeat center;
-    background-size: 60%;
+    background: url(../../assets/thumbnails/instock-logo.svg) no-repeat center;
+    background-size: 65%;
     border-bottom: rgb(255, 255, 255) solid 1px;
 }

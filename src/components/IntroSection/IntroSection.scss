@@ -1,0 +1,31 @@
+@use '../../styles/partials/fonts' as *;
+
+.intro-section {
+
+    &__heading {
+        margin: 3rem 3rem 1rem;
+        font-family: 'MadeTommy';
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-family: 'MadeTommyLight';
+        margin: 0rem 3rem 1rem;
+    }
+    &__photo {
+        height: auto;
+        width: 50%;
+
+        &-border {
+            margin: 0 auto 1rem;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            background: url('../../assets/thumbnails/IMG_1340.png');
+            background-position: center;
+            background-size: cover;
+
+        }
+    }
+}
+
