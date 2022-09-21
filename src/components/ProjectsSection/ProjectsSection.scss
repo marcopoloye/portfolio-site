@@ -11,27 +11,45 @@
         font-size: 3rem;
         text-transform: uppercase;
     }
+    &__card {
+        margin: 0 2rem 0;
+    }
     &__thumbnail {
         width: 100%;
         height: 8rem;
-        margin: 0 2rem 0;
-        background-color: rgb(200, 200, 200);
-        margin-bottom: 2rem;
+        margin: 0 0rem 0;
+        background-color: rgb(175, 175, 175);
+        border: 1px solid white;
+    }
+    &__text {
+        font-family: 'MadeTommyLight';
+        margin: .5rem 0 0rem;
+        padding-bottom: .5rem;
+    }
+    &__icons {
+        padding-bottom: 2rem;
     }
 }
 
-
+.bottom {
+    margin-bottom: 0;
+    padding-bottom: 2.5rem;
+}
 
 #thumbnail-one, #thumbnail-two, #thumbnail-three, #thumbnail-four {
     width: 100%;
     height: 100%;
+
+    &:hover {
+        display: block;
+        background: none;
+        background-color: rgb(50, 50, 50);
+    }
 }
 
 #thumbnail-one {
     background: url(../../assets/thumbnails/dontforget-logo.svg) no-repeat center;
     background-size: 90%;
-    border-top: none;
-
 }
 
 #thumbnail-two {
@@ -47,4 +65,15 @@
 #thumbnail-three {
     background: url(../../assets/thumbnails/instock-logo.svg) no-repeat center;
     background-size: 65%;
+}
+
+#icon-git {
+    height: auto;
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+#icon-link {
+    height: auto;
+    width: 1.25rem;
 }
