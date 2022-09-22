@@ -1,6 +1,5 @@
 import './ContactSection.scss'
 import emailjs from '@emailjs/browser';
-import React, {useRef} from 'react';
 
 function ContactSection() {
     const sendEmail = (e) => {

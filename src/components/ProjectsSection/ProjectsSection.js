@@ -1,7 +1,6 @@
 import './ProjectsSection.scss';
 import gitsvg from '../../assets/icons/gitsvg.svg';
 import linksvg from '../../assets/icons/linksvg.svg';
-import { Link } from 'react-router-dom';
 
 function ProjectsSection() {
     return (
