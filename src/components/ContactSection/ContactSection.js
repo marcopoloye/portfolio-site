@@ -20,7 +20,7 @@ function ContactSection() {
     };
 
     return (
-        <>
+        <div className='contact-section'>
             <h2 className='contact-section__heading'>Contact</h2>
 
             <div className='contact-section__form-container'>
@@ -40,7 +40,7 @@ function ContactSection() {
                 </form>
                 <button type='submit' form='email-form'>Send</button>
             </div>
-        </>
+        </div>
     );
 }
 

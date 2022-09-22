@@ -1,13 +1,13 @@
 @use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/breakpoints' as *;
 
 .projects-section {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 0 2rem 0;
 
     &__heading {
-        margin: 2rem 2rem 1rem;
+        margin: 2rem 0rem 1rem;
         font-family: 'MadeTommy';
         font-size: 3rem;
         text-transform: uppercase;
@@ -32,6 +32,11 @@
         &-link {
             max-height: 2rem;
             max-width: 2rem;
+        }
+    }
+    @include large-mobile {
+        &__thumbnail {
+            height: 14rem;
         }
     }
 }

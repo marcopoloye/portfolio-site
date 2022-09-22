@@ -2,12 +2,12 @@
 
 .contact-section {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0rem 2rem 1rem;
+    font-family: 'MadeTommy';
 
     &__heading {
-        margin: 0rem 2rem 1rem;
-        font-family: 'MadeTommy';
+        margin: 0 0 1rem;
         font-size: 3rem;
         text-transform: uppercase;
         border-top: 1px solid white;
@@ -16,11 +16,6 @@
     &__form {
         display: flex;
         flex-direction: column;
-        font-family: 'MadeTommy';
-
-        &-container {
-            margin: 0 2rem 2rem;
-        }
     }
 }
 

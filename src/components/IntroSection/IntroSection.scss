@@ -1,16 +1,16 @@
 @use '../../styles/partials/fonts' as *;
 
 .intro-section {
-
+        margin: 0 2rem 0;
     &__heading {
-        margin: 2rem 2rem 1rem;
+        margin: 2rem 0 1rem;
         font-family: 'MadeTommy';
         font-size: 3rem;
         text-transform: uppercase;
     }
     &__text {
         font-family: 'MadeTommyLight';
-        margin: 0rem 2rem 1rem;
+        margin: 0 0 1rem;
     }
     &__photo-border { 
         margin: 0 auto 1rem;
