@@ -16,10 +16,22 @@
     &__form {
         display: flex;
         flex-direction: column;
+        font-family: 'MadeTommy';
+
+        &-container {
+            margin: 0 2rem;
+        }
     }
 }
 
-input, textarea::placeholder {
+input, textarea, textarea::placeholder {
     font-family: 'MadeTommy';
     padding: .25rem 0 .25rem .25rem;
+    margin: 0 0 1rem;
+    resize: none;
+    
+}
+
+label {
+    margin: 0 0 .25rem;
 }

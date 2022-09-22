@@ -3,34 +3,41 @@ import emailjs from '@emailjs/browser';
 import React, {useRef} from 'react';
 
 function ContactSection() {
-    const form = useRef();
-
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_cykm9kh', 'template_zf5bcjb', form.current, 'AQBI2BVMPmfvtufFP')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        console.log(e.target)
+
+        if (e.target[0].value && e.target[1].value && e.target[2].value && e.target[3].value) {
+            // emailjs.sendForm('service_cykm9kh', 'template_zf5bcjb', e.target, 'AQBI2BVMPmfvtufFP')
+            //     .then((result) => {
+            //         console.log(result.text);
+            //     }, (error) => {
+            //         console.log(error.text);
+            //     });
+
+            e.target.reset()
+        }
     };
 
     return (
         <>
             <h2 className='contact-section__heading'>Contact</h2>
 
-            <div>
+            <div className='contact-section__form-container'>
                 <form 
                     className='contact-section__form'
                     id='email-form'
                     onSubmit={sendEmail}
-                    ref={form}
                 >
-                    <input placeholder='Enter your name' type='text' name='name'/>
-                    <input placeholder='Enter the subject' type='text' name='subject'/>
-                    <input placeholder='Enter your email' type='text' name='email'/>
-                    <textarea placeholder='Enter your message' name='message'/>
+                    <label htmlFor='name'>Name:</label>
+                    <input placeholder='Enter your name' type='text' name='name' id='name'/>
+                    <label htmlFor='email'>Email:</label>
+                    <input placeholder='Enter your email' type='text' name='email' id='email'/>
+                    <label htmlFor='subject'>Subject:</label>
+                    <input placeholder='Enter the subject' type='text' name='subject' id='subject'/>
+                    <label htmlFor='message'>Message:</label>        
+                    <textarea placeholder='Enter your message' name='message' id='message' rows="8"/>
                 </form>
                 <button type='submit' form='email-form'>Send</button>
             </div>
