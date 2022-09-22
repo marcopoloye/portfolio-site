@@ -1,18 +1,36 @@
 @use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/breakpoints' as *;
 
 .intro-section {
         margin: 0 2rem 0;
+
+    &__heading-photo-container {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0 0;
+
+        @include large-mobile {
+            margin: 2rem 0 0;
+            flex-direction: row;
+        }
+    }
     &__heading {
-        margin: 2rem 0 1rem;
+        margin: 0 0 1rem;
         font-family: 'MadeTommy';
         font-size: 3rem;
         text-transform: uppercase;
+
+        @include large-mobile {
+            display: flex;
+            margin: 0 2rem 0 0;
+            align-items: center;
+        }
     }
     &__text {
         font-family: 'MadeTommyLight';
         margin: 0 0 1rem;
     }
-    &__photo-border { 
+    &__photo { 
         margin: 0 auto 1rem;
         width: 8rem;
         height: 8rem;
@@ -21,6 +39,10 @@
         background: url('../../assets/thumbnails/IMG_1340.png');
         background-position: center;
         background-size: cover;
+
+        @include large-mobile {
+            margin: 0 0 1rem 0;
+        }
     }
 }
 
