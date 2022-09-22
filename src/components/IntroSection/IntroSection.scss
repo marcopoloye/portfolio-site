@@ -4,6 +4,10 @@
 .intro-section {
         margin: 0 2rem 0;
 
+        @include tablet {
+            margin: 0 2rem 0;
+        }
+
     &__heading-photo-container {
         display: flex;
         flex-direction: column;
@@ -13,10 +17,12 @@
             margin: 2rem 0 0;
             flex-direction: row;
         }
+        @include tablet {
+            flex-direction: row;
+        }
     }
     &__heading {
         margin: 0 0 1rem;
-        font-family: 'MadeTommy';
         font-size: 3rem;
         text-transform: uppercase;
 
@@ -50,5 +56,9 @@
     margin-bottom: 0;
     padding-bottom: 2.5rem;
     border-bottom: 1px solid white;
+
+    @include tablet {
+        border-bottom: 0px;
+    }
 }
 
