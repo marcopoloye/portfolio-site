@@ -29,13 +29,13 @@ function ContactSection() {
                     id='email-form'
                     onSubmit={sendEmail}
                 >
-                    <label htmlFor='name'>Name:</label>
+                    <label className='contact-section__form-label' htmlFor='name'>Name:</label>
                     <input placeholder='Enter your name' type='text' name='name' id='name'/>
-                    <label htmlFor='email'>Email:</label>
+                    <label className='contact-section__form-label' htmlFor='email'>Email:</label>
                     <input placeholder='Enter your email' type='text' name='email' id='email'/>
-                    <label htmlFor='subject'>Subject:</label>
-                    <input placeholder='Enter the subject' type='text' name='subject' id='subject'/>
-                    <label htmlFor='message'>Message:</label>        
+                    <label className='contact-section__form-label' htmlFor='subject'>Subject:</label>
+                    <input placeholder='Enter the email subject' type='text' name='subject' id='subject'/>
+                    <label className='contact-section__form-label' htmlFor='message'>Message:</label>        
                     <textarea placeholder='Enter your message' name='message' id='message' rows="8"/>
                 </form>
                 <button className='contact-section__form-button' type='submit' form='email-form'>Send</button>
