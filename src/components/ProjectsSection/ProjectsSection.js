@@ -14,6 +14,7 @@ function ProjectsSection() {
                     <p className='projects-section__text'>
                         Don't Forget is a checklist app designed to help forgetful travelers remember what to pack.
                     </p>
+                    <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node, Express, MySQL, OpenWeatherMap API</p>
                     <div className='projects-section__icons'>
                         <img 
                             id='icon-git'
@@ -35,6 +36,7 @@ function ProjectsSection() {
                     <p className='projects-section__text'>
                         Google Health Connect is an online portal that connects healthcare providers to patients with a focus on accessibility. 
                     </p>
+                    <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node</p>
                     <div className='projects-section__icons'>
                         <img 
                             id='icon-git'
@@ -56,6 +58,7 @@ function ProjectsSection() {
                     <p className='projects-section__text'>
                         InStock is a mock inventory management system with CRUD operations.
                     </p>
+                    <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node, Express</p>
                     <div className='projects-section__icons'>
                         <img 
                             id='icon-git'
@@ -77,6 +80,7 @@ function ProjectsSection() {
                     <p className='projects-section__text'>
                         BrainFlix is a mock video streaming platform with video uploading and commenting capabilities.
                     </p>
+                    <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node, APIs</p>
                     <div className='projects-section__icons bottom'>
                         <img 
                             id='icon-git'

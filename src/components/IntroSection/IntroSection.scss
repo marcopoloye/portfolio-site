@@ -33,6 +33,7 @@
         font-size: 3rem;
         text-transform: uppercase;
         font-family: 'MadeTommy';
+
         @include large-mobile {
             display: flex;
             margin-right: 2rem;
@@ -72,7 +73,6 @@
         border-radius: 50%;
         border: 1px solid white;
         background: url('../../assets/thumbnails/IMG_1340.png');
-        background-position: center;
         background-size: cover;
 
         @include large-mobile {
