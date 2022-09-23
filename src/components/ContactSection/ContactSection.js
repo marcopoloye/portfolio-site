@@ -46,6 +46,12 @@ function ContactSection() {
             e.target.reset();
         }
     };
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
 
     return (
         <div className='contact-section'>
@@ -75,6 +81,7 @@ function ContactSection() {
 
                 </form>
                 <button className='contact-section__form-button' type='submit' form='email-form'>Send</button>
+                <div className='contact-section__top-button' onClick={scrollToTop}>Back to Top ↑</div>
             </div>
         </div>
     );
