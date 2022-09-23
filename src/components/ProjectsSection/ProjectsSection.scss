@@ -9,7 +9,6 @@
     @include tablet {
         margin: 2rem 0 2rem 0;
         padding: 0 2rem 0;
-        border-left: 1px solid white;
     }
 
     &__heading {
@@ -38,7 +37,7 @@
         height: 8rem;
         background-color: rgb(175, 175, 175);
         border: 1px solid white;
-        
+
         @include tablet {
             width: 50%;
         }
