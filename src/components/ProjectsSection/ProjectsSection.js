@@ -12,7 +12,7 @@ function ProjectsSection() {
                         <div id='thumbnail-one'></div>
                     </div>
                     <p className='projects-section__text'>
-                        Don't Forget is a checklist app designed to help forgetful travelers remember what to pack.
+                        Don't Forget is a checklist app designed to help forgetful travelers remember what to pack based on the destination.
                     </p>
                     <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node, Express, MySQL, OpenWeatherMap API</p>
                     <div className='projects-section__icons'>
