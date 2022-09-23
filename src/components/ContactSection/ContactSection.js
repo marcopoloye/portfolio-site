@@ -38,7 +38,7 @@ function ContactSection() {
                     <label htmlFor='message'>Message:</label>        
                     <textarea placeholder='Enter your message' name='message' id='message' rows="8"/>
                 </form>
-                <button type='submit' form='email-form'>Send</button>
+                <button className='contact-section__form-button' type='submit' form='email-form'>Send</button>
             </div>
         </div>
     );
