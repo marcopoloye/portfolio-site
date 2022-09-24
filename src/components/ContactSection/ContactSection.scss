@@ -4,11 +4,11 @@
 .contact-section {
     display: flex;
     flex-direction: column;
-    margin: 0rem 2rem 1rem;
+    margin: 2rem 2rem 1rem;
     font-family: 'MadeTommy';
     
     @include tablet {
-        margin: 0rem 8%;
+        margin: 2rem 8%;
         padding-bottom: 2.5rem;
     }
 
@@ -16,7 +16,6 @@
         margin: 0 0 1rem;
         font-size: 3rem;
         text-transform: uppercase;
-        padding-top: 2rem;
 
         @include tablet {
             font-size: 3.5rem;
