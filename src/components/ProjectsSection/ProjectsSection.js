@@ -1,12 +1,10 @@
 import './ProjectsSection.scss';
-import gitsvg from '../../assets/icons/gitsvg.svg';
-import linksvg from '../../assets/icons/linksvg.svg';
 
 function ProjectsSection() {
     return (
-        <div className='projects-section'>
+        <section className='projects-section'>
             <h2 className='projects-section__heading'>Projects</h2>
-            <section className='projects-section__card-container'>
+            <div className='projects-section__card-container'>
                 <div className='projects-section__card'>
                     <div className='projects-section__thumbnail'>
                         <div id='thumbnail-one'></div>
@@ -62,9 +60,8 @@ function ProjectsSection() {
                         <div className='projects-section__icon-link' onClick={()=> window.open('', '_blank')}></div>
                     </div>
                 </div>
-
-            </section>
-        </div>
+            </div>
+        </section>
     );
 }
 

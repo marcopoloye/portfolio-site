@@ -8,6 +8,7 @@ function ContactSection() {
     const [subjectError, setSubjectError] = useState('');
     const [messageError, setMessageError] = useState('');
 
+    // checks if form inputs are empty before sending email
     const sendEmail = (e) => {
         e.preventDefault();
         
@@ -54,15 +55,11 @@ function ContactSection() {
     }
 
     return (
-        <div className='contact-section'>
+        <section className='contact-section'>
             <h2 className='contact-section__heading'>Contact</h2>
 
             <div className='contact-section__form-container'>
-                <form 
-                    className='contact-section__form'
-                    id='email-form'
-                    onSubmit={sendEmail}
-                >
+                <form className='contact-section__form' id='email-form' onSubmit={sendEmail}>
                     <label className='contact-section__form-label' htmlFor='name'>Name:</label>
                     <input placeholder='Enter your name' type='text' name='name' id='name'/>
                     <label className='contact-section__form-label-error' htmlFor='name'>{nameError}</label>                
@@ -78,12 +75,11 @@ function ContactSection() {
                     <label className='contact-section__form-label' htmlFor='message'>Message:</label>        
                     <textarea placeholder='Enter your message' name='message' id='message' rows="8"/>
                     <label className='contact-section__form-label-error' htmlFor='message'>{messageError}</label>
-
                 </form>
                 <button className='contact-section__form-button' type='submit' form='email-form'>Send</button>
                 <div className='contact-section__top-button' onClick={scrollToTop}>Back to Top ↑</div>
             </div>
-        </div>
+        </section>
     );
 }
 

@@ -1,0 +1,85 @@
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/breakpoints' as *;
+
+.skills-section {
+    margin: 2rem 2rem 2rem;
+    font-family: 'MadeTommy';
+
+    @include tablet {
+        margin: 2rem 8% 0rem;
+    }
+    @include large-mobile {
+        &__thumbnail {
+            height: 14rem;
+        }
+    }
+    &__heading {
+        margin: 0 0 1rem;
+        font-size: 3rem;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: 3.5rem;
+            margin-bottom: 1.25rem;
+        }
+        @include desktop {
+            font-size: 4rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+    &__icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__icon-html, &__icon-css, &__icon-js, &__icon-sass, &__icon-ts, &__icon-react, &__icon-node, &__icon-express, &__icon-mysql {
+        height: 5rem;
+        width: 4rem;
+        margin: 0 .5rem 1rem;
+    }
+    &__icon-html {
+        background: url('../../assets/icons/html.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__icon-css {
+        background: url('../../assets/icons/css.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__icon-js {
+        background: url('../../assets/icons/js.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__icon-sass {
+        background: url('../../assets/icons/sass.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__icon-ts {
+        background: url('../../assets/icons/ts.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__icon-react {
+        background: url('../../assets/icons/react.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__icon-node {
+        background: url('../../assets/icons/node.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__icon-express {
+        background: url('../../assets/icons/express.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__icon-mysql {
+        background: url('../../assets/icons/mysql.svg') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}

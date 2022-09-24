@@ -91,14 +91,14 @@
         height: 1.5rem;
         width: 1.5rem;
         margin-right: 1rem;
-        background: url('../../assets/icons/gitsvg.svg') no-repeat;
+        background: url('../../assets/icons/git.svg') no-repeat;
 
         &:hover {
-            background: url('../../assets/icons/gitsvghover.svg') no-repeat;
+            background: url('../../assets/icons/githover.svg') no-repeat;
             cursor: pointer;
         }
         &:active {
-            background: url('../../assets/icons/gitsvgclick.svg') no-repeat;
+            background: url('../../assets/icons/gitclick.svg') no-repeat;
         }
 
         @include tablet {
@@ -109,14 +109,14 @@
     &__icon-link {
         height: 1.25rem;
         width: 1.25rem;
-        background: url('../../assets/icons/linksvg.svg') no-repeat;
+        background: url('../../assets/icons/link.svg') no-repeat;
 
         &:hover {
-            background: url('../../assets/icons/linksvghover.svg') no-repeat;
+            background: url('../../assets/icons/linkhover.svg') no-repeat;
             cursor: pointer;
         }
         &:active {
-            background: url('../../assets/icons/linksvgclick.svg') no-repeat;
+            background: url('../../assets/icons/linkclick.svg') no-repeat;
         }
 
         @include tablet {
