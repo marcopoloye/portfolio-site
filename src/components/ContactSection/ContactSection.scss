@@ -4,15 +4,15 @@
 .contact-section {
     display: flex;
     flex-direction: column;
-    margin: 2rem 2rem 1rem;
+    margin: 2rem 2rem 2rem;
     font-family: 'MadeTommy';
     
     @include tablet {
-        margin: 2rem 10%;
+        margin: 2rem 10% 4rem;
         padding-bottom: 2.5rem;
     }
     @include desktop {
-        margin: 2rem 12.5%;
+        margin: 2rem 12.5% 4rem;
     }
 
     &__heading {
