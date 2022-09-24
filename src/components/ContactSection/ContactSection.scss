@@ -86,20 +86,27 @@
         }
     }
     &__top-button {
-        text-decoration: none;
         padding: .75rem;
         color: rgb(240, 240, 240);
-        background: rgb(41, 41, 41);
+        background: rgb(44, 44, 44);
         border: 1px solid white;
         margin-top: 4rem;
         font-size: 1rem;
+
+        &:hover {
+            background-color: rgb(100, 100, 100);
+            cursor: pointer;
+        }
+        &:active {
+            background-color: rgb(44, 44, 44);
+        }
     }
 }
 
 input, textarea {
     font-family: 'MadeTommy';
     padding: .5rem 0 .5rem .5rem;
-    margin: 0 0 0rem;
+    margin: 0 0 .25rem;
     resize: none;
 
     &::placeholder {

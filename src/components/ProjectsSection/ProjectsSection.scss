@@ -10,7 +10,11 @@
     @include tablet {
         margin: 2rem 8% 0rem;
     }
-
+    @include large-mobile {
+        &__thumbnail {
+            height: 14rem;
+        }
+    }
     &__heading {
         margin: 0 0 1rem;
         font-size: 3rem;
@@ -70,28 +74,53 @@
             margin-bottom: .6rem;
         }
     }
-    &__icons {
+    &__icon-container {
         padding: .5rem 0 2rem;
-        
+        display: flex;
+        align-items: center;
+
         @include tablet {
             padding-bottom: 2.25rem;
         }
         @include desktop {
             padding-bottom: 2.5rem;
         }
+    }
+    &__icon-git {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 1rem;
+        background: url('../../assets/icons/gitsvg.svg') no-repeat;
 
-        &-link {
-            max-height: 2rem;
-            max-width: 2rem;
-            @include tablet {
-                max-height: 3rem;
-                max-width: 3rem;
-            }
+        &:hover {
+            background: url('../../assets/icons/gitsvghover.svg') no-repeat;
+            cursor: pointer;
+        }
+        &:active {
+            background: url('../../assets/icons/gitsvgclick.svg') no-repeat;
+        }
+
+        @include tablet {
+            height: 1.75rem;
+            width: 1.75rem;
         }
     }
-    @include large-mobile {
-        &__thumbnail {
-            height: 14rem;
+    &__icon-link {
+        height: 1.25rem;
+        width: 1.25rem;
+        background: url('../../assets/icons/linksvg.svg') no-repeat;
+
+        &:hover {
+            background: url('../../assets/icons/linksvghover.svg') no-repeat;
+            cursor: pointer;
+        }
+        &:active {
+            background: url('../../assets/icons/linksvgclick.svg') no-repeat;
+        }
+
+        @include tablet {
+            height: 1.5rem;
+            width: 1.5rem;
         }
     }
 }
@@ -109,6 +138,10 @@
 #thumbnail-one {
     background: url(../../assets/thumbnails/dontforget-logo.svg) no-repeat center;
     background-size: 80%;
+
+    &:hover {
+        background: green;
+    }
 }
 
 #thumbnail-two {
@@ -124,32 +157,4 @@
 #thumbnail-four {
     background: url(../../assets/thumbnails/brainflix-logo.svg) no-repeat center;
     background-size: 80%;
-}
-
-
-
-#icon-git {
-    height: auto;
-    width: 1.5rem;
-    margin-right: 1rem;
-
-    &:hover {
-        cursor: pointer;
-    }
-
-    @include tablet {
-        width: 1.75rem;
-    }
-}
-
-#icon-link {
-    height: auto;
-    width: 1.25rem;
-
-    &:hover {
-        cursor: pointer;
-    }
-    @include tablet {
-        width: 1.5rem;
-    }
 }
