@@ -7,7 +7,10 @@
     border-bottom: 1px solid white;
 
     @include tablet {
-        margin: 2rem 8%;
+        margin: 2rem 10%;
+    }
+    @include desktop {
+        margin: 2rem 12.5%;
     }
 
     &__heading {

@@ -8,13 +8,17 @@
     font-family: 'MadeTommy';
 
     @include tablet {
-        margin: 2rem 8% 0rem;
+        margin: 2rem 10% 0rem;
     }
     @include large-mobile {
         &__thumbnail {
             height: 14rem;
         }
     }
+    @include desktop {
+        margin: 2rem 12.5%;
+    }
+
     &__heading {
         margin: 0 0 1rem;
         font-size: 3rem;

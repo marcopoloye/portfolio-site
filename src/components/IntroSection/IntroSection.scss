@@ -10,11 +10,11 @@
             margin-top: 5rem;
         }
         @include tablet {
-            margin: 6rem 8% 0rem;
+            margin: 6rem 10% 0rem;
             align-items: center;
         }
         @include desktop {
-            margin: 7.5rem 8% 0rem;
+            margin: 7.5rem 12.5% 0rem;
         }
 
     &__heading-photo-container {

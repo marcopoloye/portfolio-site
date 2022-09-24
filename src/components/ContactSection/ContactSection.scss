@@ -8,8 +8,11 @@
     font-family: 'MadeTommy';
     
     @include tablet {
-        margin: 2rem 8%;
+        margin: 2rem 10%;
         padding-bottom: 2.5rem;
+    }
+    @include desktop {
+        margin: 2rem 12.5%;
     }
 
     &__heading {
