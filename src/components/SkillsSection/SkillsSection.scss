@@ -2,19 +2,20 @@
 @use '../../styles/partials/breakpoints' as *;
 
 .skills-section {
-    margin: 2rem 2rem;
+    margin: 0rem 2rem;
+    padding-top: 2rem;
     font-family: 'MadeTommy';
-    border-bottom: 1px solid white;
+    border-top: 1px solid white;
 
     @include tablet {
-        margin: 2rem 10%;
+        margin: 0rem 10%;
     }
     @include desktop {
-        margin: 2rem 12.5%;
+        margin: 0rem 12.5%;
     }
 
     &__heading {
-        margin: 0 0 1rem;
+        margin: 0rem 0rem 1rem;
         font-size: 3rem;
         text-transform: uppercase;
 
@@ -31,22 +32,21 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 2.5rem;
     }
     &__icon-html, &__icon-css, &__icon-js, &__icon-sass, &__icon-ts, &__icon-react, &__icon-node, &__icon-express, &__icon-mysql {
         height: 5rem;
         width: 4rem;
-        margin: 0 .5rem 1rem;
+        margin: 0rem .5rem 1rem;
 
         @include tablet {
             height: 6rem;
             width: 5rem;
-            margin: 0 1rem 1.5rem;
+            margin-bottom: 1rem;
         }
-        @include tablet {
+        @include desktop {
             height: 7rem;
             width: 6rem;
-            margin: 0 1.5rem 2rem;
+            margin: 0rem 1.5rem 2rem;
         }
     }
     &__icon-html {
@@ -94,4 +94,15 @@
         background-size: contain;
         background-position: center;
     }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }

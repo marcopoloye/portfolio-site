@@ -4,8 +4,10 @@
 .contact-section {
     display: flex;
     flex-direction: column;
-    margin: 2rem 2rem 2rem;
+    margin: 0rem 2rem 2rem;
+    padding-top: 2rem;
     font-family: 'MadeTommy';
+    border-top: 1px solid white;
     
     @include tablet {
         margin: 2rem 10% 4rem;
@@ -92,8 +94,9 @@
         color: rgb(240, 240, 240);
         background: rgb(44, 44, 44);
         border: 1px solid white;
-        margin-top: 4rem;
         font-size: 1rem;
+        width: 6.5rem;
+        margin: 4rem auto 0;
 
         &:hover {
             background-color: rgb(100, 100, 100);

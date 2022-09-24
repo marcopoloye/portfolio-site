@@ -4,19 +4,15 @@
 .projects-section {
     display: flex;
     flex-direction: column;
-    margin: 2rem 2rem 0;
+    margin: 1rem 2rem 0rem;
+    padding-top: 2rem;
     font-family: 'MadeTommy';
 
     @include tablet {
-        margin: 2rem 10% 0rem;
-    }
-    @include large-mobile {
-        &__thumbnail {
-            height: 14rem;
-        }
+        margin: 1rem 10% 0rem;
     }
     @include desktop {
-        margin: 2rem 12.5%;
+        margin: 1rem 12.5%;
     }
 
     &__heading {
@@ -38,7 +34,6 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-        border-bottom: 1px solid white;
 
         @include tablet {
             flex-direction: row;
@@ -55,9 +50,11 @@
         width: 100%;
         height: 9rem;
         background-color: rgb(175, 175, 175);
-        border: 1px solid white;
         margin-bottom: 1rem;
         
+        @include large-mobile {
+            height: 14rem;
+        }
         @include tablet {
             margin-bottom: 1.1rem;
         }

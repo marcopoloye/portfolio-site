@@ -56,9 +56,9 @@ function ContactSection() {
 
     return (
         <section className='contact-section'>
-            <h2 className='contact-section__heading'>Contact</h2>
+            <h2 className='contact-section__heading reveal'>Contact</h2>
 
-            <div className='contact-section__form-container'>
+            <div className='contact-section__form-container reveal'>
                 <form className='contact-section__form' id='email-form' onSubmit={sendEmail}>
                     <label className='contact-section__form-label' htmlFor='name'>Name:</label>
                     <input placeholder='Enter your name' type='text' name='name' id='name'/>
@@ -77,8 +77,8 @@ function ContactSection() {
                     <label className='contact-section__form-label-error' htmlFor='message'>{messageError}</label>
                 </form>
                 <button className='contact-section__form-button' type='submit' form='email-form'>Send</button>
-                <div className='contact-section__top-button' onClick={scrollToTop}>Back to Top ↑</div>
             </div>
+            <div className='contact-section__top-button' onClick={scrollToTop}>Back to Top ↑</div>
         </section>
     );
 }

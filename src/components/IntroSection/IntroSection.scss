@@ -5,6 +5,13 @@
         margin: 4rem 2rem 0rem;
         display: flex;
         flex-direction: column;
+        border-bottom: 1px solid white;
+        animation: fadeIn 2s;
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
 
         @include large-mobile {
             margin-top: 5rem;
@@ -95,9 +102,5 @@
 }
 
 .bottom-border {
-    margin-bottom: 0;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid white;
-
+    padding-bottom: 1.5rem;
 }
-

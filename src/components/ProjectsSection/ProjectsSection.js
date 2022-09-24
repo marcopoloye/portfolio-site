@@ -3,9 +3,9 @@ import './ProjectsSection.scss';
 function ProjectsSection() {
     return (
         <section className='projects-section'>
-            <h2 className='projects-section__heading'>Projects</h2>
+            <h2 className='projects-section__heading reveal'>Projects</h2>
             <div className='projects-section__card-container'>
-                <div className='projects-section__card'>
+                <div className='projects-section__card reveal'>
                     <div className='projects-section__thumbnail'>
                         <div id='thumbnail-one'></div>
                     </div>
@@ -19,7 +19,7 @@ function ProjectsSection() {
                     </div>
                 </div>
 
-                <div className='projects-section__card'>
+                <div className='projects-section__card reveal'>
                     <div className='projects-section__thumbnail'>
                         <div id='thumbnail-two'></div>
                     </div>
@@ -33,7 +33,7 @@ function ProjectsSection() {
                     </div>
                 </div>
 
-                <div className='projects-section__card'>
+                <div className='projects-section__card reveal'>
                     <div className='projects-section__thumbnail'>
                         <div id='thumbnail-three'></div>
                     </div>
@@ -47,7 +47,7 @@ function ProjectsSection() {
                     </div>
                 </div>
 
-                <div className='projects-section__card'>
+                <div className='projects-section__card reveal'>
                     <div className='projects-section__thumbnail'>
                         <div id='thumbnail-four'></div>
                     </div>
@@ -55,7 +55,7 @@ function ProjectsSection() {
                         BrainFlix is a mock video streaming platform with video uploading and commenting capabilities.
                     </p>
                     <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node, APIs</p>
-                    <div className='projects-section__icon-container bottom'>
+                    <div className='projects-section__icon-container'>
                         <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/marcopoloye/brainflix', '_blank')}></div>
                         <div className='projects-section__icon-link' onClick={()=> window.open('', '_blank')}></div>
                     </div>
