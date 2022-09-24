@@ -78,7 +78,12 @@ function ContactSection() {
                 </form>
                 <button className='contact-section__form-button' type='submit' form='email-form'>Send</button>
             </div>
+
             <div className='contact-section__top-button' onClick={scrollToTop}>Back to Top ↑</div>
+            <div className='contact-section__icon-container'>
+                <div className='contact-section__icon-linkedin' onClick={()=> window.open('https://www.linkedin.com/in/marcoye/', '_blank')} title='LinkedIn'></div>
+                <div className='contact-section__icon-github' onClick={()=> window.open('https://github.com/marcopoloye', '_blank')} title='GitHub'></div>
+            </div>
         </section>
     );
 }
