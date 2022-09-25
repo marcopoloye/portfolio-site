@@ -41,13 +41,13 @@ function ContactSection() {
             emailjs.sendForm('service_cykm9kh', 'template_zf5bcjb', e.target, 'AQBI2BVMPmfvtufFP')
                 .then((result) => {
                     console.log(result.text);
+                    setEmailSent('Email was sent!');
                 }, (error) => {
                     console.log(error.text);
                     setEmailSent('Email was not sent! Try again later!')
                 });
 
             e.target.reset();
-            setEmailSent('Email was sent!');
         }
     };
     const clearSuccess = () => {
