@@ -7,6 +7,7 @@ function ContactSection() {
     const [emailError, setEmailError] = useState('');
     const [subjectError, setSubjectError] = useState('');
     const [messageError, setMessageError] = useState('');
+    const [emailSent, setEmailSent] = useState('test');
 
     // checks if form inputs are empty before sending email
     const sendEmail = (e) => {
@@ -40,6 +41,7 @@ function ContactSection() {
             emailjs.sendForm('service_cykm9kh', 'template_zf5bcjb', e.target, 'AQBI2BVMPmfvtufFP')
                 .then((result) => {
                     console.log(result.text);
+                    setEmailSent('Email was sent!');
                 }, (error) => {
                     console.log(error.text);
                 });
@@ -77,6 +79,7 @@ function ContactSection() {
                     <label className='contact-section__form-label-error' htmlFor='message'>{messageError}</label>
                 </form>
                 <button className='contact-section__form-button' type='submit' form='email-form'>Send</button>
+                <label className='contact-section__form-email-success'>{emailSent}</label>
             </div>
 
             <div className='contact-section__top-button' onClick={scrollToTop}>Back to Top ↑</div>

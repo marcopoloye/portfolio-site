@@ -87,6 +87,17 @@
                 color: red;
             }
         }
+        &-email-success {
+            margin-top: 1rem;
+            font-size: 1rem;
+
+            @include tablet {
+                font-size: 1.1rem;
+            }
+            @include desktop {
+                font-size: 1.2rem;
+            }
+        }
     }
     &__top-button {
         padding: .75rem;
