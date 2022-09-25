@@ -44,6 +44,7 @@ function ContactSection() {
                     setEmailSent('Email was sent!');
                 }, (error) => {
                     console.log(error.text);
+                    setEmailSent('Email was not sent! Try again later!')
                 });
 
             e.target.reset();
