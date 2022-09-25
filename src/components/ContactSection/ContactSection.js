@@ -7,7 +7,7 @@ function ContactSection() {
     const [emailError, setEmailError] = useState('');
     const [subjectError, setSubjectError] = useState('');
     const [messageError, setMessageError] = useState('');
-    const [emailSent, setEmailSent] = useState('test');
+    const [emailSent, setEmailSent] = useState('');
 
     // checks if form inputs are empty before sending email
     const sendEmail = (e) => {
