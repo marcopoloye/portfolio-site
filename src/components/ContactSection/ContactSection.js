@@ -37,12 +37,12 @@ function ContactSection() {
         }
 
         if (e.target[0].value && e.target[1].value && e.target[1].value.includes('@') && e.target[2].value && e.target[3].value) {
-            // emailjs.sendForm('service_cykm9kh', 'template_zf5bcjb', e.target, 'AQBI2BVMPmfvtufFP')
-            //     .then((result) => {
-            //         console.log(result.text);
-            //     }, (error) => {
-            //         console.log(error.text);
-            //     });
+            emailjs.sendForm('service_cykm9kh', 'template_zf5bcjb', e.target, 'AQBI2BVMPmfvtufFP')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
 
             e.target.reset();
         }
