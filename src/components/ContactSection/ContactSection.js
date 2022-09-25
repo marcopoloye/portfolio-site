@@ -41,15 +41,18 @@ function ContactSection() {
             emailjs.sendForm('service_cykm9kh', 'template_zf5bcjb', e.target, 'AQBI2BVMPmfvtufFP')
                 .then((result) => {
                     console.log(result.text);
-                    setEmailSent('Email was sent!');
                 }, (error) => {
                     console.log(error.text);
                     setEmailSent('Email was not sent! Try again later!')
                 });
 
             e.target.reset();
+            setEmailSent('Email was sent!');
         }
     };
+    const clearSuccess = () => {
+        setEmailSent('')
+    }
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -64,7 +67,7 @@ function ContactSection() {
             <div className='contact-section__form-container reveal'>
                 <form className='contact-section__form' id='email-form' onSubmit={sendEmail}>
                     <label className='contact-section__form-label' htmlFor='name'>Name:</label>
-                    <input placeholder='Enter your name' type='text' name='name' id='name'/>
+                    <input placeholder='Enter your name' type='text' name='name' id='name' onClick={clearSuccess}/>
                     <label className='contact-section__form-label-error' htmlFor='name'>{nameError}</label>                
 
                     <label className='contact-section__form-label' htmlFor='email'>Email:</label>
