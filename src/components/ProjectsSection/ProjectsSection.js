@@ -29,7 +29,7 @@ function ProjectsSection() {
                     <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node</p>
                     <div className='projects-section__icon-container'>
                         <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/marcopoloye/googleHackathon', '_blank')}></div>
-                        <div className='projects-section__icon-link' onClick={()=> window.open('https://googlehealthconnect.netlify.app/health', '_blank')}></div>
+                        <div className='projects-section__icon-link' onClick={()=> window.open('https://googlehealthconnect.netlify.app/', '_blank')}></div>
                     </div>
                 </div>
 
