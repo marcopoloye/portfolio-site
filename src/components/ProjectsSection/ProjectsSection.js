@@ -6,7 +6,7 @@ function ProjectsSection() {
             <h2 className='projects-section__heading reveal'>Projects</h2>
             <div className='projects-section__card-container'>
                 <div className='projects-section__card reveal'>
-                    <div className='projects-section__thumbnail'>
+                    <div className='projects-section__thumbnail' title="Don't Forget logo" alt="Don't Forget logo">
                         <div id='thumbnail-one'></div>
                     </div>
                     <p className='projects-section__text'>
@@ -14,13 +14,13 @@ function ProjectsSection() {
                     </p>
                     <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node, Express, MySQL, OpenWeatherMap API</p>
                     <div className='projects-section__icon-container'>
-                        <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/marcopoloye/dont-forget', '_blank')}></div>
-                        <div className='projects-section__icon-link' onClick={()=> window.open('https://dont-forget-2022.herokuapp.com/', '_blank')}></div>
+                        <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/marcopoloye/dont-forget', '_blank')} title='GitHub repo' alt='GitHub icon'></div>
+                        <div className='projects-section__icon-link' onClick={()=> window.open('https://dont-forget-2022.herokuapp.com/', '_blank')} title='Open link' alt='External link icon'></div>
                     </div>
                 </div>
 
                 <div className='projects-section__card reveal'>
-                    <div className='projects-section__thumbnail'>
+                    <div className='projects-section__thumbnail' title="Google Health Connect logo" alt="Google Health Connect logo">
                         <div id='thumbnail-two'></div>
                     </div>
                     <p className='projects-section__text'>
@@ -28,13 +28,13 @@ function ProjectsSection() {
                     </p>
                     <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node</p>
                     <div className='projects-section__icon-container'>
-                        <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/marcopoloye/googleHackathon', '_blank')}></div>
-                        <div className='projects-section__icon-link' onClick={()=> window.open('https://googlehealthconnect.netlify.app/', '_blank')}></div>
+                        <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/marcopoloye/googleHackathon', '_blank')} title='GitHub repo' alt='GitHub icon'></div>
+                        <div className='projects-section__icon-link' onClick={()=> window.open('https://googlehealthconnect.netlify.app/', '_blank')} title='Open link' alt='External link icon'></div>
                     </div>
                 </div>
 
                 <div className='projects-section__card reveal'>
-                    <div className='projects-section__thumbnail'>
+                    <div className='projects-section__thumbnail' title="InStock logo" alt="InStock logo">
                         <div id='thumbnail-three'></div>
                     </div>
                     <p className='projects-section__text'>
@@ -42,13 +42,13 @@ function ProjectsSection() {
                     </p>
                     <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node, Express</p>
                     <div className='projects-section__icon-container'>
-                        <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/freeHashBrown/instock-silentdebuggers', '_blank')}></div>
+                        <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/freeHashBrown/instock-silentdebuggers', '_blank')} title='GitHub repo' alt='GitHub icon'></div>
                         {/* <div className='projects-section__icon-link' onClick={()=> window.open('', '_blank')}></div> */}
                     </div>
                 </div>
 
                 <div className='projects-section__card reveal'>
-                    <div className='projects-section__thumbnail'>
+                    <div className='projects-section__thumbnail' title="BrainFlix logo" alt="BrainFlix logo">
                         <div id='thumbnail-four'></div>
                     </div>
                     <p className='projects-section__text'>
@@ -56,8 +56,8 @@ function ProjectsSection() {
                     </p>
                     <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node, APIs</p>
                     <div className='projects-section__icon-container'>
-                        <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/marcopoloye/brainflix', '_blank')}></div>
-                        <div className='projects-section__icon-link' onClick={()=> window.open('https://brainflix-2022.herokuapp.com/', '_blank')}></div>
+                        <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/marcopoloye/brainflix', '_blank')} title='GitHub repo' alt='GitHub icon'></div>
+                        <div className='projects-section__icon-link' onClick={()=> window.open('https://brainflix-2022.herokuapp.com/', '_blank')} title='Open link' alt='External link icon'></div>
                     </div>
                 </div>
             </div>
