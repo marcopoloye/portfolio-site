@@ -1,4 +1,4 @@
 # My portfolio site
 
-Created using React
+Created using HTML/CSS/SASS and React
 
