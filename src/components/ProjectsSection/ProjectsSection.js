@@ -43,7 +43,7 @@ function ProjectsSection() {
                     <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node, Express</p>
                     <div className='projects-section__icon-container'>
                         <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/marcopoloye/instock', '_blank')} title='GitHub repo' alt='GitHub icon'></div>
-                        {/* <div className='projects-section__icon-link' onClick={()=> window.open('', '_blank')}></div> */}
+                        <div className='projects-section__icon-link' onClick={()=> window.open('https://instock-2022.herokuapp.com/', '_blank')}></div>
                     </div>
                 </div>
 
