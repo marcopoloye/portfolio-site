@@ -57,7 +57,7 @@ function ProjectsSection() {
                     <p className='projects-section__text'><b>Stack:</b> React, HTML/CSS, Sass, Node, APIs</p>
                     <div className='projects-section__icon-container'>
                         <div className='projects-section__icon-git' onClick={()=> window.open('https://github.com/marcopoloye/brainflix', '_blank')} title='GitHub repo' alt='GitHub icon'></div>
-                        <div className='projects-section__icon-link' onClick={()=> window.open('https://brainflix-2022.herokuapp.com/', '_blank')} title='Open link' alt='External link icon'></div>
+                        <div className='projects-section__icon-link' onClick={()=> window.open('https://brainflix2022.netlify.app/', '_blank')} title='Open link' alt='External link icon'></div>
                     </div>
                 </div>
             </div>
